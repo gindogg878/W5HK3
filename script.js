@@ -31,12 +31,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   faves.removeChild(faves.lastElementChild);
   // Part 4
   const special = document.querySelectorAll(".special-title");
-  console.log(special);
+  // console.log(special);
   for (let i = 0; i < special.length; i++) {
     special[i].style.fontSize = "2rem";
   }
   // Part 5
-
+  const raced = document.querySelectorAll("#past-races li");
+  console.log(raced);
+  for (let i = 0; i < raced.length; i++) {
+    if (raced[i].textContent === "Chicago") {
+      raced[i].textContent = "";
+    }
+  }
   // Part 6
 
   // Part 7
