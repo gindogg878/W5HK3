@@ -30,7 +30,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const faves = document.querySelector("#favorite-things");
   faves.removeChild(faves.lastElementChild);
   // Part 4
-
+  const special = document.querySelectorAll(".special-title");
+  console.log(special);
+  for (let i = 0; i < special.length; i++) {
+    special[i].style.fontSize = "2rem";
+  }
   // Part 5
 
   // Part 6
