@@ -37,14 +37,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   // Part 5
   const raced = document.querySelectorAll("#past-races li");
-  console.log(raced);
+  // console.log(raced);
   for (let i = 0; i < raced.length; i++) {
     if (raced[i].textContent === "Chicago") {
       raced[i].textContent = "";
     }
   }
   // Part 6
-
+  const raceUL = document.querySelector("#past-races");
+  const newLi = document.createElement("li");
+  newLi.textContent = "Boston";
+  console.log(newLi);
+  raceUL.append(newLi);
   // Part 7
 
   // Part 8
