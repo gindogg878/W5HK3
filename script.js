@@ -54,7 +54,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   newDiv.setAttribute("class", "blog-post");
   console.log(newDiv);
   newLi.appendChild(newDiv);
-
+  const newH2 = document.createElement("h2");
+  newH2.textContent = "aka BeanTown";
+  newDiv.appendChild(newH2);
+  const newP = document.createElement("p");
+  newP.textContent = "Some consider them Title Town.";
+  newDiv.appendChild(newP);
   // Part 8
 
   // Part 9
