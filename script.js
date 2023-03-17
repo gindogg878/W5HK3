@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const raceUL = document.querySelector("#past-races");
   const newLi = document.createElement("li");
   newLi.textContent = "Boston";
-  console.log(newLi);
+  // console.log(newLi);
   raceUL.append(newLi);
   // Part 7
-  const newDiv = this.createElement("div");
+  const newDiv = document.createElement("div");
   newDiv.setAttribute("class", "blog-post");
-  console.log(newDiv);
+  // console.log(newDiv);
   newLi.appendChild(newDiv);
   const newH2 = document.createElement("h2");
   newH2.textContent = "aka BeanTown";
@@ -62,9 +62,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   newDiv.appendChild(newP);
   // Part 8
   const theTitle = document.getElementById("quote-title");
-  console.log(theTitle);
+  // console.log(theTitle);
   theTitle.addEventListener("click", (e) => {
     randomQuote();
   });
   // Part 9
+  const allBlogs = document.querySelectorAll(".blog-post");
+  console.log(allBlogs);
+  for (let i = 0; i < allBlogs.length; i++) {
+    allBlogs[i].addEventListener("mouseout", (e) => {
+      allBlogs[i].classList.toggle(".purple");
+    });
+    allBlogs[i].addEventListener("mouseenter", (e) => {
+      allBlogs[i].classList.toggle(".red");
+    });
+  }
 });
