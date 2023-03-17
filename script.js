@@ -61,6 +61,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   newP.textContent = "Some consider them Title Town.";
   newDiv.appendChild(newP);
   // Part 8
-
+  const theTitle = document.getElementById("quote-title");
+  console.log(theTitle);
+  theTitle.addEventListener("click", (e) => {
+    randomQuote();
+  });
   // Part 9
 });
