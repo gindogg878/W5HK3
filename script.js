@@ -50,6 +50,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   console.log(newLi);
   raceUL.append(newLi);
   // Part 7
+  const newDiv = this.createElement("div");
+  newDiv.setAttribute("class", "blog-post");
+  console.log(newDiv);
+  newLi.appendChild(newDiv);
 
   // Part 8
 
